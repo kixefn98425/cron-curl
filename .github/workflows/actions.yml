@@ -1,13 +1,68 @@
 on:
-  push:
   schedule:
     - cron: '*/5 * * * *'
 
 jobs:
-  job0:
+  visit-my-sites:
     runs-on: ubuntu-latest
     steps:
       - name: visit https://calclocation.applinzi.com
         run: curl https://calclocation.applinzi.com/isdbconnect.php
       - name: visit https://wecfan.cf
         run: curl https://wecfan.cf
+  visit-netlify-sites:
+    runs-on: ubuntu-latest
+    steps:
+      - name: visit https://brucederekhans-os-x-dock.netlify.app
+        run: curl https://brucederekhans-os-x-dock.netlify.app
+      - name: visit https://brucederekhans-swf-collection.netlify.app
+        run: curl https://brucederekhans-swf-collection.netlify.app
+      - name: visit https://brucederekhans-cloudy-sky.netlify.app
+        run: curl https://brucederekhans-cloudy-sky.netlify.app
+      - name: visit https://brucederekhans-matrix404.netlify.app
+        run: curl https://brucederekhans-matrix404.netlify.app
+      - name: visit https://brucederekhans-douyureplay.netlify.app
+        run: curl https://brucederekhans-douyureplay.netlify.app
+      - name: visit https://brucederekhans-string2crc32.netlify.app
+        run: curl https://brucederekhans-string2crc32.netlify.app
+      - name: visit https://brucederekhans-china-tax-calculator.netlify.app
+        run: curl https://brucederekhans-china-tax-calculator.netlify.app
+      - name: visit https://brucederekhans-china-tax-calculator-react.netlify.app
+        run: curl https://brucederekhans-china-tax-calculator-react.netlify.app
+      - name: visit https://brucederekhans-geoip.netlify.app
+        run: curl https://brucederekhans-geoip.netlify.app
+      - name: visit https://brucederekhans-geo-ip-react.netlify.app
+        run: curl https://brucederekhans-geo-ip-react.netlify.app
+      - name: visit https://brucederekhans-imagetools.netlify.app
+        run: curl https://brucederekhans-imagetools.netlify.app
+      - name: visit https://brucederekhans-imagetools-react.netlify.app
+        run: curl https://brucederekhans-imagetools-react.netlify.app
+      - name: visit https://brucederekhans-zymk-parser.netlify.app
+        run: curl https://brucederekhans-zymk-parser.netlify.app
+      - name: visit https://brucederekhans-zymk-parser-react.netlify.app
+        run: curl https://brucederekhans-zymk-parser-react.netlify.app
+      - name: visit https://brucederekhans-fgo-helper.netlify.app
+        run: curl https://brucederekhans-fgo-helper.netlify.app
+      - name: visit https://brucederekhans-imqqbg.netlify.app
+        run: curl https://brucederekhans-imqqbg.netlify.app
+      - name: visit https://brucederekhans-svg-editor-react.netlify.app
+        run: curl https://brucederekhans-svg-editor-react.netlify.app
+      - name: visit https://brucederekhans-txt-reader-react.netlify.app
+        run: curl https://brucederekhans-txt-reader-react.netlify.app
+  visit-vercel-sites:
+    runs-on: ubuntu-latest
+    steps:
+      - name: visit https://mojibake.brucederekhans.vercel.app
+        run: curl https://mojibake.brucederekhans.vercel.app
+      - name: visit https://list-subdirectories.brucederekhans.vercel.app
+        run: curl https://list-subdirectories.brucederekhans.vercel.app
+      - name: visit https://duowangallery.brucederekhans.vercel.app
+        run: curl https://duowangallery.brucederekhans.vercel.app
+      - name: visit https://bing-image.brucederekhans.vercel.app
+        run: curl https://bing-image.brucederekhans.vercel.app
+      - name: visit https://passauth.brucederekhans.vercel.app
+        run: curl https://passauth.brucederekhans.vercel.app
+      - name: visit https://filerelay-brucederekhans.vercel.app
+        run: curl https://filerelay-brucederekhans.vercel.app
+      - name: visit https://cors-proxy.brucederekhans.vercel.app
+        run: curl https://cors-proxy.brucederekhans.vercel.app
