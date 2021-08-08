@@ -4,11 +4,14 @@ on:
     - cron: '*/5 * * * *'
 
 jobs:
-  visit-my-sites:
+  visit-sae-sites:
     runs-on: ubuntu-latest
     steps:
       - name: visit https://calclocation.applinzi.com
         run: curl https://calclocation.applinzi.com/isdbconnect.php
+  visit-my-sites:
+    runs-on: ubuntu-latest
+    steps:
       - name: visit https://wecfan.cf
         run: curl https://wecfan.cf
   visit-netlify-sites:
