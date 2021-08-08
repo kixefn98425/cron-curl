@@ -1,7 +1,7 @@
 on:
   push:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '0/6 * * * *'
 
 jobs:
   visit-my-sites:
