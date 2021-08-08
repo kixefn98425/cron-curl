@@ -1,16 +1,19 @@
 on:
+  push:
   schedule:
     - cron: '*/5 * * * *'
 
 jobs:
-  job0:
+  visit-my-sites:
     runs-on: ubuntu-latest
     steps:
       - name: visit https://calclocation.applinzi.com
         run: curl https://calclocation.applinzi.com/isdbconnect.php
       - name: visit https://wecfan.cf
         run: curl https://wecfan.cf
-
+  visit-netlify-sites:
+    runs-on: ubuntu-latest
+    steps:
       - name: visit https://brucederekhans-os-x-dock.netlify.app
         run: curl https://brucederekhans-os-x-dock.netlify.app
       - name: visit https://brucederekhans-swf-collection.netlify.app
@@ -47,7 +50,9 @@ jobs:
         run: curl https://brucederekhans-svg-editor-react.netlify.app
       - name: visit https://brucederekhans-txt-reader-react.netlify.app
         run: curl https://brucederekhans-txt-reader-react.netlify.app
-
+  visit-vercel-sites:
+    runs-on: ubuntu-latest
+    steps:
       - name: visit https://mojibake.brucederekhans.vercel.app
         run: curl https://mojibake.brucederekhans.vercel.app
       - name: visit https://list-subdirectories.brucederekhans.vercel.app
