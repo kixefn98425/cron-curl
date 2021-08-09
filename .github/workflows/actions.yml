@@ -7,8 +7,8 @@ jobs:
   visit-sae-sites:
     runs-on: ubuntu-latest
     steps:
-      - name: visit https://calclocation.applinzi.com
-        run: curl https://calclocation.applinzi.com/isdbconnect.php
+      - name: visit http://calclocation.applinzi.com
+        run: curl http://calclocation.applinzi.com/isdbconnect.php
   visit-my-sites:
     runs-on: ubuntu-latest
     steps:
