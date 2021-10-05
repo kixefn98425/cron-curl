@@ -12,8 +12,8 @@ jobs:
   visit-my-sites:
     runs-on: ubuntu-latest
     steps:
-      - name: visit https://wecfan.cf
-        run: curl https://wecfan.cf
+      - name: visit https://wecfan.work
+        run: curl https://wecfan.work
   visit-netlify-sites:
     runs-on: ubuntu-latest
     steps:
