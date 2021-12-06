@@ -9,11 +9,6 @@ jobs:
     steps:
       - name: visit http://calclocation.applinzi.com
         run: curl http://calclocation.applinzi.com/isdbconnect.php
-  visit-my-sites:
-    runs-on: ubuntu-latest
-    steps:
-      - name: visit https://wecfan.work
-        run: curl https://wecfan.work
   visit-netlify-sites:
     runs-on: ubuntu-latest
     steps:
